@@ -1,0 +1,1345 @@
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("assets/fonts/PressStart2P-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  background-color: #f6f3ea;
+  font-family: "Press Start 2P", cursive;
+  color: #333;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f3ea;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.image-30 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.image-27 {
+  position: absolute;
+  bottom: 0;
+  height: 20.25vh;
+  left: 0;
+  width: 100vw;
+}
+
+.image-27 img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: 50.68% 87.31%;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.image-26-container {
+  position: absolute;
+  display: flex;
+  height: 68.15vh;
+  align-items: center;
+  justify-content: center;
+  width: 19.64vw;
+  top: calc(8.33333% + 11.66vh);
+  left: calc(75% - 4.06vw);
+}
+
+.image-26 {
+  height: 67.81vh;
+  width: 19.2vw;
+  transform: rotate(-0.636deg);
+}
+
+.image-26 img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: 56.1% 50.94%;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.component-4 {
+  position: absolute;
+  height: 32.77vh;
+  width: 45.67vw;
+  top: calc(58.3333% + 3.18vh);
+  left: calc(16.6667% + 6.09vw);
+}
+
+.desk1-1 {
+  background-image: url("assets/Component 4.png");
+  background-size: 100.06% 100%;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  aspect-ratio: 3401 / 1372;
+}
+
+.desk1-5 {
+  background-image: url("assets/Component 4.png");
+  background-size: 461.85% 310.53%;
+  background-position: 83.82% 46.25%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 30vw;
+  top: 12.1vh;
+  width: 9.9vw;
+  height: 12.6vh;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.desk1-5:hover {
+  transform: translateX(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.desk1-4 {
+  background-image: url("assets/Component 4.png");
+  background-size: 454.67% 600%;
+  background-position: 83.6% 17.29%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 29.8vw;
+  top: 5.3vh;
+  width: 10.1vw;
+  height: 6.9vh;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.desk1-4:hover {
+  transform: translateX(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.desk1-3 {
+  background-image: url("assets/Component 4.png");
+  background-size: 469.26% 321.82%;
+  background-position: 15.24% 45.08%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 5.5vw;
+  top: 12.2vh;
+  width: 9.7vw;
+  height: 12.2vh;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.desk1-3:hover {
+  transform: translateX(5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.desk1-2 {
+  background-image: url("assets/Component 4.png");
+  background-size: 461.85% 570.97%;
+  background-position: 15.46% 16.78%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 5.5vw;
+  right: 66.363%;
+  top: 5.3vh;
+  aspect-ratio: 190 / 62;
+  cursor: pointer;
+  width: 9.9vw;
+  height: 6.7vh;
+  transition: all 0.2s ease-in-out;
+}
+
+.desk1-2:hover {
+  transform: translateX(5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.discog,
+.las-eternas,
+.my-trinity,
+.ruben-blades-1,
+.image-54,
+.heat,
+.insta,
+.github,
+.board {
+  position: absolute;
+  transition: none;
+}
+
+.discog img,
+.las-eternas img,
+.my-trinity img,
+.ruben-blades-1 img,
+.image-54 img,
+.heat img,
+.insta img,
+.github img,
+.board img {
+  transition: none;
+}
+
+.discog {
+  cursor: pointer;
+  height: 12.41vh;
+  width: 17.7vw;
+  top: calc(33.3333% + 7.04vh);
+  left: calc(75% - 2.76vw);
+  overflow: visible;
+  opacity: 0.85;
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.discog img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  background-size: 161.6% 334.65%;
+
+  background-position: 50.33% 18.99%;
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.2s ease-in-out;
+    border: none;
+  padding: 0;
+}
+
+.discog:hover img {
+  transform: rotate(5deg);
+    border: none;
+  padding: 0;
+}
+
+.las-eternas {
+  cursor: pointer;
+  height: 16.48vh;
+  width: 10.62vw;
+  top: calc(75% - 4.92vh);
+  left: calc(75% + 0.78vw);
+  overflow: visible;
+  border: none;
+  padding: 0;
+  background: none;
+  scale: 0.9;
+}
+
+.las-eternas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: 100% 114.57%;
+  background-position: 0% 100%;
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.las-eternas:hover img {
+  transform: rotate(5deg);
+}
+
+.my-trinity {
+  cursor: pointer;
+  height: 13.61vh;
+  width: 7.03vw;
+  top: calc(50% + 5.49vh);
+  left: calc(75% - 2.81vw);
+  overflow: visible;
+  transform: scaleY(1);
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.my-trinity img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: 100.03% 128.57%;
+  background-position: 50% 100%;
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.my-trinity:hover img {
+  transform: rotate(5deg);
+}
+
+.ruben-blades-1 {
+  cursor: pointer;
+  height: 40vh;
+  left: 9.01vw;
+  width: 18vw;
+  top: calc(8.33333% + 9.81vh);
+  overflow: visible;
+  border: none;
+  padding: 0;
+  background: none;
+  position: relative;
+}
+
+.ruben-blades-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-size: 157.73% 123.15%;
+  background-position: 50% 49.47%;
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.ruben-blades-1:hover img {
+  transform: rotate(5deg);
+}
+
+.papi-blades {
+  font-family: "Press Start 2P";
+  color: white;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 3.5vh;
+}
+
+.ruben-blades-1:hover .papi-blades {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.image-54 {
+  cursor: pointer;
+  height: 12vh;
+  width: 7vw;
+  top: calc(58.3333% - 1.09vh);
+  left: calc(83.3333% - 1.21vw);
+  overflow: visible;
+  transform: rotate(-2.358deg);
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.image-54 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-size: cover;
+  background-position: 50% 50%;
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.image-54:hover img {
+  transform: rotate(5deg);
+}
+
+.heat {
+  cursor: pointer;
+  height: 36vh;
+  left: 7.45vw;
+  width: 15vw;
+  top: calc(66.6667% - 2.47vh);
+  overflow: visible;
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.heat img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-size: 202.26% 100%;
+  background-position: 49.17% 0%;
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.heat:hover img {
+  transform: rotate(5deg);
+}
+
+.insta {
+  cursor: pointer;
+  height: 10vh;
+  width: 8vw;
+  top: calc(58.3333% - 2.35vh);
+  left: calc(25% + 3.59vw);
+  overflow: visible;
+  border: none;
+  padding: 0;
+  scale: 0.9;
+  background: none;
+}
+
+.insta img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-size: cover;
+  background-position: 50% 50%;
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.insta:hover img {
+  transform: rotate(5deg);
+}
+
+.github {
+  cursor: pointer;
+  height: 25vh;
+  width: 22vw;
+  top: calc(41.6667% + 2.1vh);
+  left: calc(33.3333% + 3.28vw);
+  overflow: visible;
+  border: none;
+  padding: 0;
+  scale: 0.8;
+  background: none;
+}
+
+.github img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-size: 116.49% 116.37%;
+  background-position: 0% 0.16%;
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.github:hover img {
+  transform: rotate(5deg);
+}
+
+.board {
+  cursor: pointer;
+  height: 32vh;
+  overflow: visible;
+  top: 12.87vh;
+  width: 28vw;
+  left: calc(33.3333% + 0.5vw);
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.board img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-size: cover;
+  background-position: 50% 50%;
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.board:hover img {
+  transform: rotate(5deg);
+}
+
+.full-screen-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hover-text {
+  font-family: "Press Start 2P", cursive;
+  color: white;
+
+  font-size: 3.5vh;
+
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+  white-space: nowrap;
+}
+
+.discog-text {
+  font-family: "Press Start 2P";
+  color: white;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 3.5vh;
+}
+
+.discog:hover .discog-text {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(10deg);  
+  border: none;
+  padding: 0;
+}
+
+.las-eternas-text {
+  font-family: "Press Start 2P";
+  color: white;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 3.5vh;
+}
+
+.las-eternas:hover .las-eternas-text {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.my-trinity-text {
+  font-family: "Press Start 2P";
+  color: white;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 3.5vh;
+}
+
+.my-trinity:hover .my-trinity-text {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.image-54-text {
+  font-family: "Press Start 2P";
+  color: white;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 3.5vh;
+}
+
+.image-54:hover .image-54-text {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.heat-text {
+  font-family: "Press Start 2P";
+  color: white;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 3.5vh;
+}
+
+.heat:hover .heat-text {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.insta-text {
+  font-family: "Press Start 2P";
+  color: white;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 3.5vh;
+}
+
+.insta:hover .insta-text {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.github-text-new {
+  font-family: "Press Start 2P";
+  color: white;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 3.5vh;
+}
+
+.github:hover .github-text-new {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.board-text-new {
+  font-family: "Press Start 2P";
+  color: white;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 3.5vh;
+}
+
+.board:hover .board-text-new {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.desk1-5-text {
+  font-family: "Press Start 2P";
+  color: white;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.desk1-5:hover .desk1-5-text {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.desk1-4-text {
+  font-family: "Press Start 2P";
+  color: white;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.desk1-4:hover .desk1-4-text {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.desk1-3-text {
+  font-family: "Press Start 2P";
+  color: white;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.desk1-3:hover .desk1-3-text {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.desk1-2-text {
+  font-family: "Press Start 2P";
+  color: white;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.desk1-2:hover .desk1-2-text {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.overlay-board-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.img-board {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  background-size: cover;
+  background-position: 50% 50%;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  z-index: 1000;
+}
+
+.overlay-board {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 1000;
+}
+
+.overlay-board.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-overlay {
+  position: absolute;
+  top: -30px;
+  width: 23%;
+  height: 50%;
+  z-index: 1001;
+  opacity: 1;
+  left: calc(33.3333% - 13.5vw);
+  scale: 0.8;
+}
+
+.invisible-close {
+  position: absolute;
+  top: 0.85vh;
+  left: 34.1vw;
+  width: 2.7vw;
+  height: 3.5vh;
+  z-index: 1002;
+  cursor: pointer;
+  background-color: rgba(0, 89, 255, 0);
+}
+
+.screamer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.screamer-overlay img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.overlay-dorian {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  z-index: 10000;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-discog {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+    border: none;
+  padding: 0;
+}
+
+.overlay-discog.active {
+  display: flex;
+    border: none;
+  padding: 0;
+}
+
+.overlay-discog-content {
+  position: relative;
+  width: 60%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    border: none;
+  padding: 0;
+}
+
+.discog-overlay-img {
+  position: absolute;
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: contain;
+  z-index: 1;
+    border: none;
+  padding: 0;
+}
+
+.discog-album-img {
+  position: absolute;
+  max-width: 30%;
+  max-height: 30%;
+  object-fit: contain;
+  z-index: 3;
+  left: 35%;
+}
+
+.discog-vinil-img {
+  position: absolute;
+  max-width: 30%;
+  max-height: 30%;
+  object-fit: contain;
+  z-index: 2;
+  left: 46%;
+  cursor: grab;
+  transform: translateX(-15%);
+}
+
+.invisible-close-discog {
+  position: absolute;
+  top: 22.5%;
+  right: 26%;
+  width: 14%;
+  height: 8%;
+  z-index: 10002;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.overlay-dorian-content {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-dorian {
+  margin-top: 6%;
+  max-width: 62%;
+  max-height: 62%;
+  object-fit: contain;
+  z-index: 10001;
+}
+
+.second-overlay-dorian {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 60%;
+  height: 80%;
+  z-index: 10001;
+  opacity: 1;
+}
+
+.invisible-close-dorian {
+  position: absolute;
+  top: 11.5%;
+  right: 22%;
+  width: 15%;
+  height: 10%;
+  z-index: 10002;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.overlay-github {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-github.active {
+  display: flex;
+}
+
+.overlay-github-content {
+  position: relative;
+  width: 60%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invisible-close-github {
+  position: absolute;
+  top: 2.5%;
+  right: 20%;
+  width: 15%;
+  height: 10%;
+  z-index: 10002;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.github-overlay-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  z-index: 10001;
+}
+
+.github-qr-img {
+  position: absolute;
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  z-index: 10002;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.github-qr-img.active {
+  opacity: 1;
+}
+
+.invisible-close-qr {
+  position: absolute;
+  top: 16%;
+  right: 35%;
+  width: 10%;
+  height: 7%;
+  z-index: 10003;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.github-qr-img.active+.invisible-close-qr {
+  opacity: 1;
+}
+
+.overlay-insta {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-insta.active {
+  display: flex;
+}
+
+.overlay-insta-content {
+  position: relative;
+  width: 60%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invisible-close-insta {
+  position: absolute;
+  top: 1.5%;
+  right: 26%;
+  width: 14%;
+  height: 8%;
+  z-index: 10002;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.insta-solo-img,
+.insta-photo-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  position: absolute;
+}
+
+.insta-photo-img {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 10001;
+}
+
+.insta-photo-img.active {
+  opacity: 1;
+}
+
+.insta-solo-clickable-bottom {
+  position: absolute;
+  bottom: 4%;
+  left: 46%;
+  width: 8%;
+  height: 10%;
+  z-index: 10002;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.overlay-BS {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-BS.active {
+  display: flex;
+}
+
+.overlay-BS-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invisible-close-BS {
+  position: absolute;
+  top: 2.5%;
+  right: 20%;
+  width: 15%;
+  height: 10%;
+  z-index: 10002;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.BS-overlay-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  z-index: 10001;
+}
+
+.BS-qr-img {
+  position: absolute;
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  z-index: 10002;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.BS-qr-img.active {
+  opacity: 1;
+}
+
+.invisible-close-qr-BS {
+  position: absolute;
+  top: 16%;
+  right: 35%;
+  width: 10%;
+  height: 7%;
+  z-index: 10003;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.BS-qr-img.active + .invisible-close-qr-BS {
+  opacity: 1;
+}
+
+.bs-addme {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  width: 22%;
+  height: auto;
+  z-index: 2;
+}
+
+.bs-stats {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  width: 40%;
+  height: auto;
+  z-index: 3;
+}
+
+.bs-wierdT {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  width: 22%;
+  height: auto;
+  z-index: 4;
+}
+
+.bs-fav {
+  position: absolute;
+  left: 3%;
+  bottom: 3%;
+  width: 22%;
+  height: auto;
+  z-index: 5;
+}
+
+.bs-steal {
+  position: absolute;
+  right: 10%;
+  bottom: 3%;
+  width: 28%;
+  height: auto;
+  z-index: 6;
+}
+
+.overlay-trinity {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-trinity.active {
+  display: flex;
+}
+
+.overlay-trinity-content {
+  position: relative;
+  width: 80vw;
+  height: 80vh;
+  max-width: 90%;
+  max-height: 90%;
+  background-image: url('assets/My Trinity/My trinity Overlay.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trinity-close-btn {
+  position: absolute;
+  top: 4%;
+  right: 12%;
+  width: 6%;
+  height: 10%;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.trinity-close-btn img {
+  display: none;
+}
+
+.trinity-main-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  z-index: 10000;
+}
+
+.close-hose,
+.close-cacti,
+.close-big {
+  position: absolute;
+  top: 10%;
+  height: auto;
+  z-index: 10002;
+}
+.close-hose {
+  left: 23%;
+  width: 14%;
+}
+.close-cacti {
+  left: 41%;
+  width: 17%;
+}
+.close-big {
+  left: 62%;
+  width: 14%;
+}
+
+.close-hose:hover {
+  content: url('assets/My Trinity/House Plants Open.png');
+  width: 25%;
+  left: 16%;
+  top: 10%;
+  z-index: 10005;
+  transform: none;
+  transition: width 0.2s, left 0.2s, top 0.2s;
+}
+.close-cacti:hover {
+  content: url('assets/My Trinity/Cacti Plants Open.png');
+  width: 24%;
+  left: 37%;
+  top: 10%;
+  z-index: 10005;
+  transform: none;
+  transition: width 0.2s, left 0.2s, top 0.2s;
+}
+.close-big:hover {
+  content: url('assets/My Trinity/Big Plants Open.png');
+  width: 22%;
+  left: 58.5%;
+  top: 10%;
+  z-index: 10005;
+  transform: none;
+  transition: width 0.2s, left 0.2s, top 0.2s;
+}
+.close-hose:hover,
+.close-cacti:hover,
+.close-big:hover {
+  transition: transform 0.2s;
+}
