@@ -39,18 +39,26 @@ const dorianOverlay = document.querySelector(".overlay-dorian");
 const invisibleCloseDorian = document.querySelector(".invisible-close-dorian");
 const videoDorian = document.querySelector(".video-dorian");
 
+function closeDorianOverlay() {
+  dorianOverlay.classList.remove("active");
+  if (videoDorian) {
+    videoDorian.pause();
+    videoDorian.currentTime = 0;
+  }
+}
+
 heatButton.addEventListener("click", () => {
-  dorianOverlay.style.display = "flex";
+  dorianOverlay.classList.add("active");
   if (videoDorian) {
     videoDorian.play();
   }
 });
 
-invisibleCloseDorian.addEventListener("click", () => {
-  dorianOverlay.style.display = "none";
-  if (videoDorian) {
-    videoDorian.pause();
-    videoDorian.currentTime = 0; // Reinicia el video
+invisibleCloseDorian.addEventListener("click", closeDorianOverlay);
+
+dorianOverlay.addEventListener("click", (e) => {
+  if (e.target === dorianOverlay) {
+    closeDorianOverlay();
   }
 });
 
@@ -135,12 +143,10 @@ let startX;
 let currentX = 0;
 let maxX = 160; // Define el límite máximo de arrastre en píxeles
 
-// Mostrar el overlay
 discogButton.addEventListener("click", () => {
   overlayDiscog.classList.add("active");
 });
 
-// Cerrar el overlay y resetear el disco
 invisibleCloseDiscog.addEventListener("click", () => {
   overlayDiscog.classList.remove("active");
   discogVinilImg.style.transition = "transform 0.3s ease";
@@ -191,5 +197,26 @@ myTrinityButton.addEventListener('click', () => {
 if (trinityCloseBtn) {
   trinityCloseBtn.addEventListener('click', () => {
     overlayTrinity.classList.remove('active');
+  });
+}
+
+const papiBladesButton = document.querySelector('.ruben-blades-1');
+const overlayPapiBlades = document.querySelector('.overlay-papi-blades');
+const papiBladesCloseBtn = document.querySelector('.papi-blades-close-btn');
+
+if (papiBladesButton && overlayPapiBlades) {
+  papiBladesButton.addEventListener('click', () => {
+    overlayPapiBlades.classList.add('active');
+  });
+  overlayPapiBlades.addEventListener('click', (e) => {
+    if (e.target === overlayPapiBlades) {
+      overlayPapiBlades.classList.remove('active');
+    }
+  });
+}
+
+if (papiBladesCloseBtn && overlayPapiBlades) {
+  papiBladesCloseBtn.addEventListener('click', () => {
+    overlayPapiBlades.classList.remove('active');
   });
 }
