@@ -220,3 +220,101 @@ if (papiBladesCloseBtn && overlayPapiBlades) {
     overlayPapiBlades.classList.remove('active');
   });
 }
+
+const lasEternasButton = document.querySelector('.las-eternas');
+const overlayLasEternas = document.querySelector('.overlay-las-eternas');
+const invisibleCloseLasEternas = document.querySelector('.invisible-close-las-eternas');
+
+lasEternasButton.addEventListener('click', () => {
+  overlayLasEternas.classList.add('active');
+});
+
+invisibleCloseLasEternas.addEventListener('click', () => {
+  overlayLasEternas.classList.remove('active');
+});
+
+// Las Eternas carousel setup
+const lasEternasImages = [
+  {
+    src: 'assets/Las Eternas/Dar es Dar- Fito Paez.png',
+    caption: '<b>Dar es Dar</b><br>-Fito Paez'
+  },
+  {
+    src: 'assets/Las Eternas/Amor y Control- Ruben Blades.png',
+    caption: '<b>Amor y Control</b><br>-Ruben Blades'
+  },
+  {
+    src: 'assets/Las Eternas/Somebody that I used to Know- Gotye.png',
+    caption: '<b>Somebody that I used to Know</b><br>-Gotye'
+  },
+  {
+    src: 'assets/Las Eternas/Te Busco- Celia Cruz.png',
+    caption: '<b>Te Busco</b><br>-Celia Cruz'
+  },
+  {
+    src: 'assets/Las Eternas/Canción para Mi muerte- Sui Generis.png',
+    caption: '<b>Canción para Mi muerte</b><br>-Sui Generis'
+  },
+  {
+    src: 'assets/Las Eternas/Early Summer Late Spring- Mitski.png',
+    caption: '<b>Early Summer Late Spring</b><br>-Mitski'
+  },
+  {
+    src: 'assets/Las Eternas/Walts 2XOXO- Elliott Smith.png',
+    caption: '<b>Walts#2XOXO</b><br>-Elliott Smith'
+  },
+  {
+    src: 'assets/Las Eternas/Amor de Primavera - Conjunto Chaney.png',
+    caption: '<b>Amor de Primavera</b><br>-Conjunto Chaney'
+  },
+  {
+    src: 'assets/Las Eternas/Everywhere-Fleetwoodmac.png',
+    caption: '<b>Everywhere</b><br>-Fleetwood Mac'
+  },
+  {
+    src: 'assets/Las Eternas/Cruz de Navajas- Mecano.png',
+    caption: '<b>Cruz de Navajas</b><br>-Mecano'
+  }
+];
+
+const carouselImagesContainer = document.querySelector('.carousel-images');
+const carouselCaption = document.querySelector('.carousel-caption');
+let lasEternasIndex = 0;
+
+function renderLasEternasCarousel() {
+  carouselImagesContainer.innerHTML = '';
+  // Show previous, current, and next images
+  for (let i = -1; i <= 1; i++) {
+    let idx = (lasEternasIndex + i + lasEternasImages.length) % lasEternasImages.length;
+    const img = document.createElement('img');
+    img.src = lasEternasImages[idx].src;
+    img.className = 'carousel-image' + (i === 0 ? ' active' : ' side');
+    carouselImagesContainer.appendChild(img);
+  }
+  carouselCaption.innerHTML = lasEternasImages[lasEternasIndex].caption;
+}
+
+function lasEternasNext() {
+  lasEternasIndex = (lasEternasIndex + 1) % lasEternasImages.length;
+  renderLasEternasCarousel();
+}
+function lasEternasPrev() {
+  lasEternasIndex = (lasEternasIndex - 1 + lasEternasImages.length) % lasEternasImages.length;
+  renderLasEternasCarousel();
+}
+
+// Keyboard navigation for Las Eternas overlay
+window.addEventListener('keydown', (e) => {
+  if (overlayLasEternas.classList.contains('active')) {
+    if (e.key === 'ArrowRight') {
+      lasEternasNext();
+    } else if (e.key === 'ArrowLeft') {
+      lasEternasPrev();
+    }
+  }
+});
+
+// Render carousel when overlay opens
+lasEternasButton.addEventListener('click', () => {
+  renderLasEternasCarousel();
+});
