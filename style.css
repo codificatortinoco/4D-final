@@ -668,7 +668,7 @@ body {
   color: white;
   text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
