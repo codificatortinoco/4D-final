@@ -1308,7 +1308,7 @@ body {
   position: absolute;
   top: 4%;
   right: 12%;
-  width: 6%;
+  width: 10%;
   height: 10%;
   background: none;
   border: none;
@@ -1646,6 +1646,7 @@ body {
   text-align: center;
   padding: 3% 2%;
   box-sizing: border-box;
+  line-height: 150%;
 }
 .carousel-images {
   display: flex;
